@@ -1,0 +1,19 @@
+{
+  "name": "lca-electronics-assessment",
+  "version": "1.0.0",
+  "description": "Life Cycle Assessment of Electronic Devices: From Manufacturing to End-of-Life Management",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve ."
+  },
+  "keywords": [
+    "life-cycle-assessment",
+    "electronics",
+    "e-waste",
+    "circular-economy",
+    "sustainability",
+    "iso-14040"
+  ],
+  "author": "Antigravity Research",
+  "license": "MIT"
+}

@@ -1,0 +1,1142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Life Cycle Assessment of Electronic Devices | From Manufacturing to End-of-Life</title>
+  
+  <!-- SEO & Social Meta -->
+  <meta name="description" content="Explore the environmental life cycle of electronic devices, from raw-material extraction and manufacturing to use, repair, recycling, and e-waste management.">
+  <meta name="keywords" content="Life Cycle Assessment, LCA, Electronics Sustainability, E-Waste, Circular Economy, Semiconductor Carbon Footprint, Scope 3 Emissions, ISO 14040">
+  <meta property="og:title" content="Life Cycle Assessment of Electronic Devices | Research Dossier">
+  <meta property="og:description" content="From raw materials buried beneath the earth to manufacturing, everyday use, repair, recycling, and end-of-life — discover the environmental footprint hidden inside technology.">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%23059669'/><text x='50' y='68' font-size='60' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='800'>Ω</text></svg>">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Top Scroll Progress Bar -->
+  <div class="scroll-progress-container" aria-hidden="true">
+    <div id="scroll-progress-bar" class="scroll-progress-bar"></div>
+  </div>
+
+  <!-- Sticky Scientific Navigation -->
+  <header class="site-nav" role="banner">
+    <div class="nav-container">
+      <a href="#hero" class="brand-wrapper" aria-label="LCA Electronics Dossier Home">
+        <div class="brand-icon">Ω</div>
+        <div class="brand-text">
+          <span class="brand-title">ELECTRONIC LCA</span>
+          <span class="brand-subtitle">ISO 14040/44 RESEARCH DOSSIER</span>
+        </div>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#hero" class="nav-link active">Overview</a></li>
+          <li><a href="#lifecycle" class="nav-link">Life Cycle</a></li>
+          <li><a href="#materials" class="nav-link">Materials</a></li>
+          <li><a href="#manufacturing" class="nav-link">Manufacturing</a></li>
+          <li><a href="#impact" class="nav-link">Impact</a></li>
+          <li><a href="#anatomy" class="nav-link">Anatomy</a></li>
+          <li><a href="#use-phase" class="nav-link">Use Phase</a></li>
+          <li><a href="#repair" class="nav-link">Repair & Reuse</a></li>
+          <li><a href="#ewaste" class="nav-link">E-Waste</a></li>
+          <li><a href="#circular" class="nav-link">Circularity</a></li>
+          <li><a href="#calculator" class="nav-link">LCA Explorer</a></li>
+          <li><a href="#sources" class="nav-link">Sources</a></li>
+        </ul>
+      </nav>
+
+      <a href="#lifecycle" class="nav-cta-btn">
+        <span>Explore Journey</span>
+        <span>↓</span>
+      </a>
+
+      <button id="mobile-menu-toggle" class="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        ☰
+      </button>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div id="mobile-nav-drawer" class="mobile-nav-drawer" aria-label="Mobile Navigation">
+      <a href="#hero" class="mobile-nav-link"><span>00 Overview</span> <span>→</span></a>
+      <a href="#lifecycle" class="mobile-nav-link"><span>01 Life Cycle Journey</span> <span>→</span></a>
+      <a href="#materials" class="mobile-nav-link"><span>02 Material Matrix</span> <span>→</span></a>
+      <a href="#manufacturing" class="mobile-nav-link"><span>03 Manufacturing</span> <span>→</span></a>
+      <a href="#impact" class="mobile-nav-link"><span>04 Impact Dashboard</span> <span>→</span></a>
+      <a href="#anatomy" class="mobile-nav-link"><span>05 Device Anatomy</span> <span>→</span></a>
+      <a href="#transport" class="mobile-nav-link"><span>06 Logistics & Transport</span> <span>→</span></a>
+      <a href="#use-phase" class="mobile-nav-link"><span>07 Consumer Use Phase</span> <span>→</span></a>
+      <a href="#repair" class="mobile-nav-link"><span>08 Repair & Reuse</span> <span>→</span></a>
+      <a href="#ewaste" class="mobile-nav-link"><span>09 E-Waste Realities</span> <span>→</span></a>
+      <a href="#recycling" class="mobile-nav-link"><span>10 Recycling Pipeline</span> <span>→</span></a>
+      <a href="#circular" class="mobile-nav-link"><span>11 Circular Economy</span> <span>→</span></a>
+      <a href="#calculator" class="mobile-nav-link"><span>12 LCA Explorer</span> <span>→</span></a>
+      <a href="#actions" class="mobile-nav-link"><span>13 Stakeholder Actions</span> <span>→</span></a>
+      <a href="#sources" class="mobile-nav-link"><span>14 Sources & Bibliography</span> <span>→</span></a>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ======================================================================
+         SECTION 1 & 3: HERO SECTION
+         ====================================================================== -->
+    <section id="hero" class="hero-section">
+      <div class="hero-grid-bg" aria-hidden="true"></div>
+      
+      <div class="container hero-content">
+        <div class="hero-tag">
+          <span class="dot"></span>
+          <span>ENVIRONMENTAL LIFE CYCLE ASSESSMENT // SCIENTIFIC INVENTORY</span>
+        </div>
+
+        <h1 class="hero-headline">
+          THE LIFE OF AN <br>
+          <span class="gradient">ELECTRONIC DEVICE</span>
+        </h1>
+
+        <p class="hero-subheadline">
+          From raw materials buried beneath the earth to high-precision semiconductor cleanrooms, everyday charging, repair, recycling, and end-of-life — discover the hidden environmental footprint embedded inside the technology we use every day.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#lifecycle" class="btn-primary">
+            <span>Explore the Life Cycle</span>
+            <span>→</span>
+          </a>
+          <a href="#impact" class="btn-secondary">
+            <span>View Environmental Impacts</span>
+            <span>📊</span>
+          </a>
+        </div>
+
+        <!-- Interactive Hero Device Transformation Preview -->
+        <div class="hero-device-wrapper">
+          <nav class="hero-transform-nav" aria-label="Hero lifecycle preview steps">
+            <button class="transform-step-btn active" data-stage-index="0">01 Mining</button>
+            <button class="transform-step-btn" data-stage-index="1">02 Refining</button>
+            <button class="transform-step-btn" data-stage-index="2">03 Chipmaking</button>
+            <button class="transform-step-btn" data-stage-index="3">04 Assembly</button>
+            <button class="transform-step-btn" data-stage-index="4">05 Logistics</button>
+            <button class="transform-step-btn" data-stage-index="5">06 In Use</button>
+            <button class="transform-step-btn" data-stage-index="6">07 Repair</button>
+            <button class="transform-step-btn" data-stage-index="8">08 Recycling</button>
+            <button class="transform-step-btn" data-stage-index="9">09 Circular</button>
+          </nav>
+
+          <div class="hero-display-stage">
+            <div class="hero-visual-card">
+              <img id="hero-preview-img" src="https://images.unsplash.com/photo-1578328819058-b69f3a3b0f6b?auto=format&fit=crop&w=1200&q=80" alt="Raw Material Extraction Mining Operations" loading="eager">
+              <div class="hero-visual-overlay">
+                <span class="hero-visual-badge">SUPPLY CHAIN VERIFIED</span>
+              </div>
+            </div>
+
+            <div class="hero-stage-info">
+              <span id="hero-stage-badge-num" class="hero-stage-badge">PHASE 01 // UPSTREAM MINING</span>
+              <h2 id="hero-stage-title-text" class="hero-stage-title">Raw Material Extraction</h2>
+              <p id="hero-stage-desc-text" class="hero-stage-desc">
+                Over 60 elemental materials are extracted worldwide, from copper and aluminum to critical minerals like lithium and cobalt.
+              </p>
+
+              <div class="hero-stage-metrics">
+                <div class="metric-item">
+                  <span id="hero-m1-val" class="val">34 kg</span>
+                  <span class="lbl">Ore Mined / Phone</span>
+                </div>
+                <div class="metric-item">
+                  <span id="hero-m2-val" class="val">1,200 L</span>
+                  <span class="lbl">Water / kg Lithium</span>
+                </div>
+                <div class="metric-item">
+                  <span id="hero-m3-val" class="val">~99%</span>
+                  <span class="lbl">Discarded Tailings</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="lca-definition-bar">
+            <span><strong>LCA = Life Cycle Assessment</strong> (ISO 14040/14044 Standardized Framework)</span>
+            <span>CRADLE-TO-GRAVE TELEMETRY</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ======================================================================
+         SECTION 4: INTERACTIVE LIFE-CYCLE JOURNEY (Centerpiece)
+         ====================================================================== -->
+    <section id="lifecycle" class="lifecycle-section">
+      <div class="container">
+        <div class="section-badge emerald">01 TO 10 LIFECYCLE PHASES</div>
+        <h2 class="section-title gradient-emerald">The Complete Life Cycle Journey</h2>
+        <p class="section-desc">
+          Follow an electronic device through all ten critical stages. Click any stage below to inspect verified material inputs, cleanroom energy intensity, toxic effluent risks, and circular reduction opportunities.
+        </p>
+
+        <!-- 10 Horizontal Stage Tabs -->
+        <div id="lifecycle-stage-tabs" class="stages-stepper" role="tablist" aria-label="Life cycle stages">
+          <!-- Populated by js/app.js -->
+        </div>
+
+        <!-- Active Stage Viewer Card -->
+        <div class="active-stage-card">
+          <div class="stage-card-top">
+            <div class="stage-card-image-wrap">
+              <img id="stage-main-image" src="https://images.unsplash.com/photo-1578328819058-b69f3a3b0f6b?auto=format&fit=crop&w=1200&q=80" alt="Current Stage Image" loading="lazy">
+              <div id="stage-image-caption-text" class="stage-image-caption">
+                Open-pit mining operations extracting mineral ores.
+              </div>
+            </div>
+
+            <div class="stage-card-main-info">
+              <div class="stage-index-header">
+                <span id="stage-num-badge" class="stage-index-num">STAGE 01</span>
+                <span id="stage-category-text" class="stage-category-label">Upstream Supply Chain</span>
+              </div>
+              <h3 id="stage-title-text" class="stage-view-title">Raw Material Extraction</h3>
+              <div id="stage-subtitle-text" class="stage-view-subtitle">Geological mining and extraction of metal ores</div>
+              <p id="stage-summary-text" class="stage-view-summary">
+                Every electronic device begins deep within the Earth's crust. Over 60 distinct elemental materials are extracted, ranging from high-volume base metals to scarce critical minerals.
+              </p>
+
+              <div id="stage-metrics-container" class="stage-metrics-row">
+                <!-- Dynamically populated -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Bottom 3-Column Breakdown -->
+          <div class="stage-card-details-grid">
+            <div class="detail-col">
+              <div class="detail-col-header">
+                <span>⛏️</span>
+                <span>Resources & Feedstocks</span>
+              </div>
+              <ul id="stage-resources-list" class="detail-list">
+                <!-- Dynamically populated -->
+              </ul>
+            </div>
+
+            <div class="detail-col">
+              <div class="detail-col-header">
+                <span>⚠️</span>
+                <span>Emissions & Waste Impacts</span>
+              </div>
+              <ul id="stage-emissions-list" class="detail-list">
+                <!-- Dynamically populated -->
+              </ul>
+            </div>
+
+            <div class="detail-col">
+              <div class="detail-col-header">
+                <span>🌱</span>
+                <span>Mitigation & Circular Levers</span>
+              </div>
+              <ul id="stage-reductions-list" class="detail-list">
+                <!-- Dynamically populated -->
+              </ul>
+            </div>
+          </div>
+
+          <!-- Verified Statistic Banner -->
+          <div style="padding: 0 2.5rem 2.5rem; background: #ffffff;">
+            <div class="stat-callout-box">
+              <div id="stage-stat-val" class="stat-val">99.9%</div>
+              <div id="stage-stat-ctx" class="stat-ctx">To yield just 1 gram of gold for microchips, over 1,000 kg of rock and earth must typically be blasted and processed.</div>
+              <div id="stage-stat-src" class="stat-src">Source: U.S. Geological Survey & UNEP Resource Panel</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ======================================================================
+         SECTION 5: RAW MATERIAL EXTRACTION & MATERIAL MATRIX
+         ====================================================================== -->
+    <section id="materials" class="materials-section">
+      <div class="container">
+        <div class="section-badge amber">CRITICAL MINERAL INVENTORY</div>
+        <h2 class="section-title gradient-amber">The Periodic Table of Electronics</h2>
+        <p class="section-desc">
+          Modern electronics rely on over half of the periodic table. Select any critical element below to inspect its extraction footprint, environmental risks, water intensity, and secondary recycling viability.
+        </p>
+
+        <div class="matrix-grid-layout">
+          <!-- 12 Element Grid -->
+          <div id="periodic-matrix-grid" class="periodic-matrix-wrapper">
+            <!-- Populated by js/app.js -->
+          </div>
+
+          <!-- Material Inspector Panel -->
+          <aside class="material-inspector-panel" aria-label="Element Details Panel">
+            <div class="inspector-header">
+              <div id="mat-inspector-symbol" class="inspector-symbol-badge">Cu</div>
+              <div class="inspector-title-wrap">
+                <h3 id="mat-inspector-name">Copper</h3>
+                <p id="mat-inspector-category">Base Conductor • Atomic Number 29</p>
+              </div>
+            </div>
+
+            <div class="inspector-meta-list">
+              <div class="meta-row">
+                <span class="label">Usage in Devices</span>
+                <span id="mat-inspector-usage" class="value">15–20 g in smartphone; 100–150 g in laptop</span>
+              </div>
+              <div class="meta-row">
+                <span class="label">Primary Mining Hubs</span>
+                <span id="mat-inspector-mining" class="value">Chile (Escondida), Peru, DR Congo, China, USA</span>
+              </div>
+              <div class="meta-row">
+                <span class="label">Carbon Intensity</span>
+                <span id="mat-inspector-carbon" class="value">3.5–5.0 kg CO₂e / kg primary copper</span>
+              </div>
+              <div class="meta-row">
+                <span class="label">Water Intensity</span>
+                <span id="mat-inspector-water" class="value">40–60 L / kg primary copper</span>
+              </div>
+              <div class="meta-row">
+                <span class="label">Ecological Concerns</span>
+                <span id="mat-inspector-concerns" class="value impact-highlight">Acid mine drainage (AMD), heavy metal bio-accumulation.</span>
+              </div>
+              <div class="meta-row">
+                <span class="label">Recycling Recovery Rate</span>
+                <span id="mat-inspector-recycling" class="value recovery-highlight">High (>90% recovery rate in smelting; retains 100% conductivity).</span>
+              </div>
+            </div>
+          </aside>
+        </div>
+
+        <!-- Global Electronic-Material Supply Chain Map -->
+        <div class="map-visual-container">
+          <div class="map-header-row">
+            <div>
+              <h3 style="font-size: 1.35rem; color: var(--text-primary); margin-bottom: 0.35rem;">Global Electronic Supply Chain Geography</h3>
+              <p style="font-size: 0.85rem; color: var(--text-secondary);">Interactive geospatial visualization of mining belts, silicon fabrication hubs, and circular smelters.</p>
+            </div>
+            <div class="map-legend">
+              <div class="legend-chip"><span class="legend-dot extract"></span> Mining Belts</div>
+              <div class="legend-chip"><span class="legend-dot fab"></span> Silicon Fabs</div>
+              <div class="legend-chip"><span class="legend-dot assemble"></span> Assembly Hubs</div>
+              <div class="legend-chip"><span class="legend-dot recycle"></span> Circular Smelters</div>
+            </div>
+          </div>
+
+          <div class="world-svg-wrapper">
+            <canvas id="supply-chain-canvas"></canvas>
+            <div id="supply-chain-tooltip" class="map-tooltip"></div>
+          </div>
+          <div style="margin-top: 1rem; display: flex; justify-content: space-between; font-family: var(--font-mono); font-size: 0.72rem; color: var(--text-muted);">
+            <span>PROJECTION: EQUIRECTANGULAR // REAL GEOGRAPHIC COORDINATES</span>
+            <span>SOURCE: USGS MINERAL SUMMARIES & IEA CRITICAL MINERALS 2023</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ======================================================================
+         SECTION 6: MANUFACTURING TRANSFORMATION PIPELINE
+         ====================================================================== -->
+    <section id="manufacturing" class="manufacturing-section">
+      <div class="container">
+        <div class="section-badge blue">HIGH-PRECISION FABRICATION</div>
+        <h2 class="section-title gradient-blue">The Manufacturing Transformation</h2>
+        <p class="section-desc">
+          Trace the complex industrial metamorphosis from raw quartz and mineral concentrates into micro-nanometer silicon architectures, high-density printed circuit boards, and finished assemblies.
+        </p>
+
+        <!-- Pipeline Nodes -->
+        <div id="pipeline-flow-nodes" class="pipeline-flow">
+          <!-- Populated by js/app.js -->
+        </div>
+
+        <!-- Interactive Step Detail Showcase -->
+        <div class="manufacturing-inspector-showcase">
+          <div class="mfg-image-panel">
+            <img id="mfg-step-image" src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1000&q=80" alt="Manufacturing Step Visual" loading="lazy">
+          </div>
+          <div class="mfg-details-panel">
+            <h3 id="mfg-step-title">Raw Quartz Sand to Polysilicon</h3>
+            <p id="mfg-step-desc">
+              Metallurgical grade silicon is refined to electronic-grade hyper-pure polysilicon (99.9999999% purity) using the Siemens chemical vapor deposition process at temperatures exceeding 1,100°C.
+            </p>
+            <div id="mfg-step-pills" class="mfg-data-pills">
+              <!-- Dynamically populated -->
+            </div>
+            <div style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--emerald-light);">
+              ★ CLEANROOM METRIC: UP TO 30 LITERS OF ULTRA-PURE WATER CONSUMED PER WAFER
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ======================================================================
+         SECTION 7 & 8: ENVIRONMENTAL IMPACT DASHBOARD & CARBON BREAKDOWN
+         ====================================================================== -->
+    <section id="impact" class="impact-dashboard-section">
+      <div class="container">
+        <div class="section-badge emerald">SCIENTIFIC DATA DASHBOARD</div>
+        <h2 class="section-title gradient-emerald">Life Cycle Environmental Impact Dashboard</h2>
+        <p class="section-desc">
+          Compare empirical cradle-to-grave indicators across major electronics categories. Sourced directly from peer-reviewed LCA literature, Fraunhofer IZM benchmarks, and corporate environmental disclosures.
+        </p>
+
+        <!-- Device Filter Controls -->
+        <div class="dashboard-controls">
+          <div class="device-filter-group" role="tablist" aria-label="Select Device for Impact Telemetry">
+            <button class="device-filter-btn active" data-device-index="0">Smartphone</button>
+            <button class="device-filter-btn" data-device-index="1">Laptop (14")</button>
+            <button class="device-filter-btn" data-device-index="2">Tablet (11")</button>
+            <button class="device-filter-btn" data-device-index="3">Desktop PC</button>
+          </div>
+          <div style="font-family: var(--font-mono); font-size: 0.78rem; color: var(--text-muted);">
+            VERIFIED DATA: ISO 14040/14044 PROTOCOLS
+          </div>
+        </div>
+
+        <!-- 4 Key Impact Metric Cards -->
+        <div class="dashboard-summary-cards">
+          <div class="kpi-card blue">
+            <div class="kpi-label">Embodied Carbon</div>
+            <div class="kpi-value"><span id="kpi-carbon-val">65</span><span class="kpi-unit">kg CO₂e</span></div>
+            <div class="kpi-sub">Pre-use manufacturing footprint</div>
+          </div>
+
+          <div class="kpi-card">
+            <div class="kpi-label">Cumulative Primary Energy</div>
+            <div class="kpi-value"><span id="kpi-energy-val">850</span><span class="kpi-unit">MJ</span></div>
+            <div class="kpi-sub">Total cradle-to-gate energy</div>
+          </div>
+
+          <div class="kpi-card amber">
+            <div class="kpi-label">Freshwater Depletion</div>
+            <div class="kpi-value"><span id="kpi-water-val">12.5</span><span class="kpi-unit">k Liters</span></div>
+            <div class="kpi-sub">Includes UPW wafer rinses</div>
+          </div>
+
+          <div class="kpi-card rose">
+            <div class="kpi-label">Raw Ore Extracted</div>
+            <div class="kpi-value"><span id="kpi-ore-val">34</span><span class="kpi-unit">kg Ore</span></div>
+            <div class="kpi-sub">Total mineral displacement</div>
+          </div>
+        </div>
+
+        <!-- Charts Grid (Donut Breakdown & Comparative Stacked Bar) -->
+        <div class="dashboard-charts-layout">
+          <div class="chart-card">
+            <div class="chart-header">
+              <h3 class="chart-title">Lifecycle Carbon Footprint Distribution</h3>
+              <span class="chart-source-tag">Source: Fraunhofer IZM & OEM Reports</span>
+            </div>
+            <div id="carbon-donut-chart" class="canvas-container">
+              <!-- Rendered via js/charts.js -->
+            </div>
+            <p style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 1rem; line-height: 1.5;">
+              Notice the high concentration in manufacturing: for smartphones and ultraportables, <strong>70% to 80%</strong> of lifetime carbon is already emitted before the first power-on.
+            </p>
+          </div>
+
+          <div class="chart-card">
+            <div class="chart-header">
+              <h3 class="chart-title">Embodied vs Operational Carbon (kg CO₂e)</h3>
+              <span class="chart-source-tag">Source: Dell / Apple LCA Studies</span>
+            </div>
+            <div id="comparison-bar-chart" class="canvas-container">
+              <!-- Rendered via js/charts.js -->
+            </div>
+            <p style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 1rem; line-height: 1.5;">
+              While high-power desktops exhibit significant use-phase emissions, battery-optimized mobile devices are overwhelmingly dominated by component manufacturing.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ======================================================================
+         SECTION 9: WHAT'S INSIDE YOUR DEVICE? (Exploded View Anatomy)
+         ====================================================================== -->
+    <section id="anatomy" class="anatomy-section">
+      <div class="container">
+        <div class="section-badge blue">INTERNAL HARDWARE ARCHITECTURE</div>
+        <h2 class="section-title gradient-blue">What's Inside Your Device?</h2>
+        <p class="section-desc">
+          Click on any internal subsystem below to inspect its material composition, functional role, repairability friction points, and recycling recovery yield.
+        </p>
+
+        <div class="anatomy-interactive-container">
+          <!-- Interactive Exploded Stack -->
+          <div class="exploded-stage-box" aria-label="Exploded Layers Interactive Stack">
+            <div class="exploded-layers-wrapper">
+              <div class="exploded-layer-plate active" style="top: 10px;" data-comp-idx="0">
+                <div class="layer-icon-badge">📱</div>
+                <div class="layer-plate-texts">
+                  <span class="l-title">OLED Touch Display</span>
+                  <span class="l-sub">Aluminosilicate Glass • ITO</span>
+                </div>
+              </div>
+
+              <div class="exploded-layer-plate" style="top: 80px;" data-comp-idx="1">
+                <div class="layer-icon-badge">🔋</div>
+                <div class="layer-plate-texts">
+                  <span class="l-title">Lithium-Ion Battery</span>
+                  <span class="l-sub">Cobalt Oxide • Graphite</span>
+                </div>
+              </div>
+
+              <div class="exploded-layer-plate" style="top: 150px;" data-comp-idx="2">
+                <div class="layer-icon-badge">🧠</div>
+                <div class="layer-plate-texts">
+                  <span class="l-title">SoC Processor & RAM</span>
+                  <span class="l-sub">Nanometer Silicon • Gold</span>
+                </div>
+              </div>
+
+              <div class="exploded-layer-plate" style="top: 220px;" data-comp-idx="3">
+                <div class="layer-icon-badge">⚡</div>
+                <div class="layer-plate-texts">
+                  <span class="l-title">Multi-Layer Logic PCB</span>
+                  <span class="l-sub">Copper • FR-4 • Tantalum</span>
+                </div>
+              </div>
+
+              <div class="exploded-layer-plate" style="top: 290px;" data-comp-idx="4">
+                <div class="layer-icon-badge">📷</div>
+                <div class="layer-plate-texts">
+                  <span class="l-title">Optical Camera Modules</span>
+                  <span class="l-sub">CMOS Sensor • Neodymium</span>
+                </div>
+              </div>
+
+              <div class="exploded-layer-plate" style="top: 360px;" data-comp-idx="5">
+                <div class="layer-icon-badge">🛡️</div>
+                <div class="layer-plate-texts">
+                  <span class="l-title">Precision Enclosure</span>
+                  <span class="l-sub">Recycled Aluminum / Titanium</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Component Details Panel -->
+          <div class="component-details-panel">
+            <div class="comp-panel-header">
+              <h3 id="comp-name-text">OLED / Liquid Crystal Display</h3>
+              <span id="comp-carbon-share-badge" class="comp-carbon-badge">12–18% of Manufacturing Footprint</span>
+            </div>
+
+            <div class="comp-info-block">
+              <span class="block-label">Materials Breakdown</span>
+              <div id="comp-materials-tags" class="comp-materials-tags">
+                <!-- Dynamically populated -->
+              </div>
+            </div>
+
+            <div class="comp-info-block">
+              <span class="block-label">Functional Role</span>
+              <p id="comp-function-text" class="block-text">Provides visual output and touch-capacitive digitizer feedback to user.</p>
+            </div>
+
+            <div class="comp-info-block">
+              <span class="block-label">Repairability Considerations</span>
+              <p id="comp-repair-text" class="block-text">Glued assemblies without modular bezels dramatically increase repair labor and risk screen cracking during removal.</p>
+            </div>
+
+            <div class="comp-info-block">
+              <span class="block-label">Recycling Recovery Yield</span>
+              <p id="comp-recycle-text" class="block-text">Indium recovery remains historically below 2% due to microscopic dispersion; specialized recyclers recover high-grade aluminosilicate cullet.</p>
+            </div>
+
+            <div class="comp-info-block">
+              <span class="block-label" style="color: var(--emerald-light);">Circular Solution</span>
+              <p id="comp-circular-text" class="block-text" style="color: var(--text-primary);">Cold-debonding display adhesives and laser-separated outer cover glass enabling sub-component refurbishment.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ======================================================================
+         SECTION 10: TRANSPORTATION & GLOBAL LOGISTICS
+         ====================================================================== -->
+    <section id="transport" class="lifecycle-section" style="padding-top: 5rem; padding-bottom: 5rem;">
+      <div class="container">
+        <div class="section-badge blue">GLOBAL SUPPLY CHAIN DISTRIBUTION</div>
+        <h2 class="section-title gradient-blue">Logistics & Transportation Dynamics</h2>
+        <p class="section-desc">
+          Electronics log tens of thousands of kilometers across complex multimodal networks before reaching retail shelves. The choice between air freight and ocean container shipping alters distribution emissions by orders of magnitude.
+        </p>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 3rem;">
+          <div style="background: var(--bg-surface); border: 1.5px solid var(--border-light); border-radius: var(--radius-md); padding: 2rem;">
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem;">
+              <span style="font-size: 1.5rem;">✈️</span>
+              <span class="section-badge amber">HIGH CARBON</span>
+            </div>
+            <h3 style="font-size: 1.25rem; color: var(--text-primary); margin-bottom: 0.5rem;">Dedicated Air Freight (Express Launch)</h3>
+            <div style="font-size: 2.25rem; font-weight: 800; font-family: var(--font-mono); color: var(--amber-light); margin-bottom: 0.5rem;">
+              ~500 g CO₂e / t-km
+            </div>
+            <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6;">
+              Often employed during initial holiday device launch windows to satisfy immediate demand. Radiative forcing from high-altitude aircraft emissions magnifies climate impact by <strong>up to 50x</strong> compared to sea freight.
+            </p>
+          </div>
+
+          <div style="background: var(--bg-surface); border: 1.5px solid var(--border-light); border-radius: var(--radius-md); padding: 2rem;">
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem;">
+              <span style="font-size: 1.5rem;">🚢</span>
+              <span class="section-badge emerald">LOW CARBON</span>
+            </div>
+            <h3 style="font-size: 1.25rem; color: var(--text-primary); margin-bottom: 0.5rem;">Maritime Container Shipping (Bulk Replenishment)</h3>
+            <div style="font-size: 2.25rem; font-weight: 800; font-family: var(--font-mono); color: var(--emerald-light); margin-bottom: 0.5rem;">
+              ~10–15 g CO₂e / t-km
+            </div>
+            <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6;">
+              Large 20,000+ TEU container vessels moving along trans-Pacific and Suez shipping lanes. Packaging miniaturization allows up to <strong>40% more devices per pallet</strong>, reducing gross container transits.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ======================================================================
+         SECTION 11: CONSUMER USE PHASE & GRID EMISSIONS SIMULATOR
+         ====================================================================== -->
+    <section id="use-phase" class="use-phase-section">
+      <div class="container">
+        <div class="section-badge emerald">OPERATIONAL TELEMETRY</div>
+        <h2 class="section-title gradient-emerald">The Consumer Use Phase</h2>
+        <p class="section-desc">
+          Operational electricity consumption depends directly on the carbon intensity of the local electricity grid. Adjust the interactive controls below to simulate how charging habits and regional energy mixes dictate use-phase emissions.
+        </p>
+
+        <div class="use-phase-simulator">
+          <div class="simulator-controls">
+            <div class="control-group">
+              <label for="grid-carbon-slider">
+                <span>Electricity Grid Carbon Intensity</span>
+                <span id="grid-carbon-value" class="val">420 g CO₂/kWh</span>
+              </label>
+              <input type="range" id="grid-carbon-slider" class="slider-input" min="20" max="800" value="420" step="10">
+              <div style="display: flex; justify-content: space-between; font-size: 0.72rem; color: var(--text-muted); font-family: var(--font-mono);">
+                <span>Clean Hydro/Nuclear (20g)</span>
+                <span>US/EU Avg (~400g)</span>
+                <span>Coal Grid (800g)</span>
+              </div>
+            </div>
+
+            <div class="control-group">
+              <label for="use-hours-slider">
+                <span>Daily Screen & Operating Hours</span>
+                <span id="use-hours-value" class="val">5.0 hrs/day</span>
+              </label>
+              <input type="range" id="use-hours-slider" class="slider-input" min="1" max="14" value="5" step="0.5">
+            </div>
+
+            <div class="control-group">
+              <label for="use-years-slider">
+                <span>Ownership Duration</span>
+                <span id="use-years-value" class="val">3.0 yrs</span>
+              </label>
+              <input type="range" id="use-years-slider" class="slider-input" min="1" max="7" value="3" step="0.5">
+            </div>
+          </div>
+
+          <div class="simulator-output-box">
+            <div>
+              <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--emerald-light); text-transform: uppercase; margin-bottom: 0.5rem;">
+                OPERATIONAL IMPACT ESTIMATE
+              </div>
+              <h3 style="font-size: 1.4rem; color: var(--text-primary); margin-bottom: 1.5rem;">Simulated Device Electrical Output</h3>
+            </div>
+
+            <div class="sim-output-grid">
+              <div class="sim-output-item">
+                <span class="label">Annual Energy</span>
+                <span id="annual-energy-output" class="value">7.3 kWh</span>
+              </div>
+              <div class="sim-output-item">
+                <span class="label">Lifetime Emissions</span>
+                <span id="lifetime-emissions-output" class="value" style="color: var(--blue-light);">9.2 kg</span>
+              </div>
+            </div>
+
+            <p style="font-size: 0.8rem; color: var(--text-secondary); line-height: 1.5; border-top: 1px solid var(--border-dark); padding-top: 1rem;">
+              Notice how even across 3 years of daily usage, the operational electricity emits only ~9 kg CO₂e — compared to the <strong>65 kg CO₂e</strong> embodied during manufacturing.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ======================================================================
+         SECTION 12: REPAIR + REUSE SECTION
+         ====================================================================== -->
+    <section id="repair" class="repair-section">
+      <div class="container">
+        <div class="repair-headline-card">
+          <div class="section-badge emerald">LIFETIME EXTENSION IS THE HIGHEST LEVER</div>
+          <h2 class="repair-big-title">
+            “THE GREENEST DEVICE MAY BE <span>THE ONE YOU KEEP USING.</span>”
+          </h2>
+          <p style="font-size: 1.15rem; color: var(--text-secondary); max-width: 760px; margin: 0 auto 1.5rem;">
+            Because 70–80% of an electronic device's emissions are locked into its creation, extending product lifespan directly defers new manufacturing and halves personal footprint.
+          </p>
+
+          <div class="repair-loop-stepper" aria-label="Device longevity cycle">
+            <span class="loop-step-badge">BUY</span>
+            <span class="loop-arrow">→</span>
+            <span class="loop-step-badge">USE</span>
+            <span class="loop-arrow">→</span>
+            <span class="loop-step-badge highlight">REPAIR</span>
+            <span class="loop-arrow">→</span>
+            <span class="loop-step-badge highlight">UPGRADE</span>
+            <span class="loop-arrow">→</span>
+            <span class="loop-step-badge highlight">REUSE</span>
+            <span class="loop-arrow">→</span>
+            <span class="loop-step-badge">REFURBISH</span>
+            <span class="loop-arrow">→</span>
+            <span class="loop-step-badge">RECYCLE</span>
+          </div>
+        </div>
+
+        <!-- Interactive Lifetime Extension Simulator -->
+        <div class="lifetime-calc-card">
+          <div class="calc-flex">
+            <div>
+              <span class="section-badge blue">INTERACTIVE LONGEVITY SIMULATOR</span>
+              <h3 style="font-size: 1.65rem; color: var(--text-primary); margin: 0.5rem 0 1rem;">What happens if you extend device life?</h3>
+              <p style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.5rem;">
+                The average smartphone is replaced after only 2.5 years, often due to a worn battery or lack of software updates rather than actual hardware failure.
+              </p>
+
+              <div class="control-group">
+                <label for="device-life-slider">
+                  <span>Simulated Smartphone Lifespan:</span>
+                  <span id="device-life-slider-val" class="val">4.0 Years</span>
+                </label>
+                <input type="range" id="device-life-slider" class="slider-input" min="2" max="7" value="4" step="0.5">
+              </div>
+            </div>
+
+            <div style="background: var(--bg-alt); border: 1.5px solid var(--border-light); border-radius: var(--radius-md); padding: 2rem;">
+              <div style="margin-bottom: 1.5rem;">
+                <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;">Annualized Carbon Avoidance</div>
+                <div id="extension-savings-pct" style="font-size: 3rem; font-weight: 800; font-family: var(--font-mono); color: var(--emerald-light);">38%</div>
+                <div style="font-size: 0.85rem; color: var(--text-secondary);">reduction in personal annual electronics climate impact</div>
+              </div>
+
+              <div style="border-top: 1px solid var(--border-dark); padding-top: 1.25rem;">
+                <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;">Virgin Mineral Ore Conserved</div>
+                <div id="extension-ore-saved" style="font-size: 2rem; font-weight: 800; font-family: var(--font-mono); color: var(--text-primary);">20.4 kg</div>
+                <div style="font-size: 0.85rem; color: var(--text-secondary);">of primary rock excavation displaced per consumer</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ======================================================================
+         SECTION 13: E-WASTE SECTION
+         ====================================================================== -->
+    <section id="ewaste" class="ewaste-section">
+      <div class="container">
+        <div class="section-badge amber">GLOBAL CRISIS & RESOURCE LOSS</div>
+        <h2 class="section-title gradient-amber">The Reality of Electronic Waste</h2>
+        <p class="section-desc">
+          Electronic waste is the world's fastest-growing municipal waste stream. When devices are discarded improperly, valuable critical minerals are lost forever and hazardous neurotoxins contaminate ecosystems.
+        </p>
+
+        <!-- Sourced Big Counters (UN Global E-waste Monitor 2024) -->
+        <div class="ewaste-hero-metrics">
+          <div class="ewaste-hero-card amber">
+            <div class="number">62 Mt</div>
+            <div class="caption">Global E-Waste Generated in 2022</div>
+            <div class="source-tag">Source: UN Global E-waste Monitor 2024 (UNITAR / ITU)</div>
+          </div>
+
+          <div class="ewaste-hero-card rose">
+            <div class="number">22.3%</div>
+            <div class="caption">Documented as Formally Collected & Recycled</div>
+            <div class="source-tag">Over 77% remains unmanaged or landfill-bound</div>
+          </div>
+
+          <div class="ewaste-hero-card blue">
+            <div class="number">$62B</div>
+            <div class="caption">USD in Recoverable Precious Metals Lost Annually</div>
+            <div class="source-tag">Including $15B in gold and $9B in copper discarded</div>
+          </div>
+        </div>
+
+        <!-- 4 Hazardous Substances Profile Grid -->
+        <h3 style="font-size: 1.35rem; color: var(--text-primary); margin-top: 3.5rem; margin-bottom: 0.5rem;">Hazardous Substances Profile</h3>
+        <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 1.5rem;">
+          Electronics contain hazardous chemical fractions that require certified de-pollution during recycling:
+        </p>
+
+        <div class="hazards-grid">
+          <div class="hazard-card">
+            <div class="substance-name">Mercury (Hg)</div>
+            <div class="substance-loc">Backlights • Tilt Sensors</div>
+            <p class="substance-desc">
+              Severe neurotoxin bio-accumulating in aquatic food chains. Over 58,000 kg of mercury is released from unmanaged e-waste yearly.
+            </p>
+          </div>
+
+          <div class="hazard-card">
+            <div class="substance-name">Lead (Pb)</div>
+            <div class="substance-loc">Leaded Glass • Legacy Solders</div>
+            <p class="substance-desc">
+              Causes neurological impairment and kidney damage. Leaches readily into groundwater when electronic scrap is dumped in unlined landfills.
+            </p>
+          </div>
+
+          <div class="hazard-card">
+            <div class="substance-name">Cadmium (Cd)</div>
+            <div class="substance-loc">Rechargeable Cells • Resistors</div>
+            <p class="substance-desc">
+              Class-1 human carcinogen causing bone fragility and irreversible renal dysfunction (Itai-itai disease).
+            </p>
+          </div>
+
+          <div class="hazard-card">
+            <div class="substance-name">Brominated Flame Retardants (BFR)</div>
+            <div class="substance-loc">Circuit Resins • Outer Plastics</div>
+            <p class="substance-desc">
+              Endocrine disruptors. Open-air burning in informal recycling yards generates highly toxic polybrominated dioxins and furans.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ======================================================================
+         SECTION 14: RECYCLING PROCESS
+         ====================================================================== -->
+    <section id="recycling" class="recycling-section">
+      <div class="container">
+        <div class="section-badge emerald">INDUSTRIAL RECOVERY PIPELINE</div>
+        <h2 class="section-title gradient-emerald">The Industrial Recycling Process</h2>
+        <p class="section-desc">
+          State-of-the-art electronics recycling is not simple shredding. Explore the 8 distinct mechanical, optical, and pyrometallurgical steps that recover >95% of precious metals.
+        </p>
+
+        <div id="recycling-steps-grid" class="recycling-steps-grid">
+          <!-- Populated by js/app.js -->
+        </div>
+
+        <div style="margin-top: 2.5rem; padding: 1.5rem; background: var(--bg-surface); border: 1.5px solid var(--border-light); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem;">
+          <div style="font-size: 0.88rem; color: var(--text-primary);">
+            <strong>Urban Mining Efficiency:</strong> 1 tonne of printed circuit boards yields up to <strong>40 to 800 times more gold</strong> than 1 tonne of primary mined ore.
+          </div>
+          <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--emerald-light);">SOURCE: UNITED NATIONS UNIVERSITY (UNU)</span>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ======================================================================
+         SECTION 15: CIRCULAR ECONOMY
+         ====================================================================== -->
+    <section id="circular" class="circular-section">
+      <div class="container">
+        <div class="section-badge emerald">REGENERATIVE SYSTEMS DESIGN</div>
+        <h2 class="section-title gradient-emerald">Linear vs Circular Electronics</h2>
+        <p class="section-desc">
+          True sustainability requires shifting from the traditional linear pipeline of extraction and abandonment into closed-loop technical cycles where materials circulate indefinitely.
+        </p>
+
+        <div class="circular-comparison-grid">
+          <!-- Linear Model Card -->
+          <div class="model-card linear">
+            <h3 class="model-title">Linear Economy (Take-Make-Waste)</h3>
+            <p class="model-desc">
+              Virgin minerals are excavated, manufactured into devices designed for fast obsolescence, and abandoned to landfills or informal burn yards.
+            </p>
+
+            <div class="model-flow-diagram">
+              <span class="flow-node">TAKE ORE</span>
+              <span>→</span>
+              <span class="flow-node">MAKE</span>
+              <span>→</span>
+              <span class="flow-node">USE</span>
+              <span>→</span>
+              <span class="flow-node highlight-red">DISCARD (77.7%)</span>
+            </div>
+
+            <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.65rem; font-size: 0.88rem; color: var(--text-secondary);">
+              <li>❌ Constant demand for destructive open-pit mining</li>
+              <li>❌ Massive greenhouse gas emissions locked into single-use hardware</li>
+              <li>❌ \$62 Billion in critical metallic assets discarded annually</li>
+            </ul>
+          </div>
+
+          <!-- Circular Model Card -->
+          <div class="model-card circular">
+            <h3 class="model-title">Circular Economy (Regenerative Loops)</h3>
+            <p class="model-desc">
+              Hardware designed for disassembly, modular replacement, long software support, and certified secondary metallurgical recovery.
+            </p>
+
+            <div class="model-flow-diagram">
+              <span class="flow-node highlight-green">DESIGN</span>
+              <span>→</span>
+              <span class="flow-node highlight-green">MAKE</span>
+              <span>→</span>
+              <span class="flow-node highlight-green">USE</span>
+              <span>⇄</span>
+              <span class="flow-node highlight-green">REPAIR</span>
+              <span>↺</span>
+              <span class="flow-node highlight-green">RECYCLE</span>
+            </div>
+
+            <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.65rem; font-size: 0.88rem; color: var(--text-secondary);">
+              <li>✓ Up to 95% energy savings using secondary recycled metals</li>
+              <li>✓ Modular batteries and components swappable in minutes</li>
+              <li>✓ Digital Product Passports ensuring transparent material traceability</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ======================================================================
+         SECTION 16: INTERACTIVE LCA CALCULATOR / EXPLORER
+         ====================================================================== -->
+    <section id="calculator" class="calculator-section">
+      <div class="container">
+        <div class="section-badge blue">EDUCATIONAL SCENARIO SIMULATOR</div>
+        <h2 class="section-title gradient-blue">Interactive Life Cycle Explorer</h2>
+        <p class="section-desc">
+          Compare personal replacement scenarios. See how keeping and repairing a device longer offsets manufacturing emissions and spares critical minerals.
+        </p>
+
+        <div class="calculator-wrapper">
+          <div class="calc-inputs-grid">
+            <div class="calc-select-box">
+              <label for="calc-device-select">Device Type</label>
+              <select id="calc-device-select">
+                <option value="smartphone">Smartphone (Flagship 6.1")</option>
+                <option value="laptop">Laptop (14" Business Ultraportable)</option>
+                <option value="tablet">Tablet (11" Mid-Range)</option>
+                <option value="desktop">Desktop Workstation (with Monitor)</option>
+              </select>
+            </div>
+
+            <div class="calc-select-box">
+              <label for="calc-scenario-a-years">Scenario A: Rapid Turnover</label>
+              <select id="calc-scenario-a-years">
+                <option value="1.5">Replace Every 1.5 Years</option>
+                <option value="2" selected>Replace Every 2.0 Years</option>
+                <option value="2.5">Replace Every 2.5 Years</option>
+              </select>
+            </div>
+
+            <div class="calc-select-box">
+              <label for="calc-scenario-b-years">Scenario B: Extended Lifespan</label>
+              <select id="calc-scenario-b-years">
+                <option value="4">Keep & Repair for 4.0 Years</option>
+                <option value="5" selected>Keep & Repair for 5.0 Years</option>
+                <option value="6">Keep & Repair for 6.0 Years</option>
+              </select>
+            </div>
+
+            <div class="calc-select-box">
+              <label for="calc-grid-select">Electricity Grid Mix</label>
+              <select id="calc-grid-select">
+                <option value="average" selected>Global Average Grid (~420g CO₂/kWh)</option>
+                <option value="clean">Renewable / Nuclear (~80g CO₂/kWh)</option>
+                <option value="fossil">Fossil-Fuel / Coal-Heavy (~750g CO₂/kWh)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="calc-comparison-results">
+            <div class="scenario-card">
+              <div class="scenario-header">Scenario A: Fast Turnover</div>
+              <div class="scenario-subtitle">Frequent upgrades with premature device retirement</div>
+              <div id="sc-a-annual-co2" class="scenario-kpi">34.0 kg CO₂e / yr</div>
+              <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.5;">
+                Annualized footprint reflects high recurring manufacturing amortization.
+              </p>
+            </div>
+
+            <div class="scenario-card better">
+              <div class="scenario-header" style="color: var(--emerald-light);">Scenario B: Extended Lifespan</div>
+              <div class="scenario-subtitle">Battery refurbishment & sustained operation</div>
+              <div id="sc-b-annual-co2" class="scenario-kpi">15.1 kg CO₂e / yr</div>
+              <div id="sc-savings-pct" style="font-weight: 700; color: var(--emerald-light); font-size: 1.1rem; margin-bottom: 0.5rem;">55% Carbon Avoidance</div>
+              <p id="sc-trees-eq" style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.5;">
+                Equivalent to ~4.3 tree seedlings grown for 10 years.
+              </p>
+            </div>
+          </div>
+
+          <div class="calc-disclaimer-banner">
+            <strong>Educational Disclaimer:</strong> Results are illustrative comparisons modeled on Fraunhofer IZM and Apple/Dell LCA inventory data. Exact footprints depend on regional grid generation mix, factory electricity contracts, logistics modes, and specific bill of materials. This tool is not a certified ISO 14040 product audit.
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ======================================================================
+         SECTION 17: PRACTICAL ACTIONS: YOU ARE PART OF THE LIFE CYCLE
+         ====================================================================== -->
+    <section id="actions" class="action-section">
+      <div class="container">
+        <div class="section-badge emerald">STAKEHOLDER ACTION FRAMEWORK</div>
+        <h2 class="section-title gradient-emerald">You Are Part of the Life Cycle</h2>
+        <p class="section-desc">
+          Every actor across the electronics ecosystem holds tangible levers to bend the linear emissions curve. Select a stakeholder category to explore high-impact recommendations.
+        </p>
+
+        <div class="action-tabs-nav" role="tablist">
+          <button class="action-tab-btn active" data-tab="Consumers">For Consumers</button>
+          <button class="action-tab-btn" data-tab="Manufacturers">For Hardware OEMs</button>
+          <button class="action-tab-btn" data-tab="Policymakers">For Regulators & Policy</button>
+        </div>
+
+        <div id="action-cards-grid" class="action-cards-grid">
+          <!-- Populated by js/app.js -->
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ======================================================================
+         SECTION 18: FINAL TRANSFORMATION EXPERIENCE
+         ====================================================================== -->
+    <section id="final-scrubber" class="final-transform-section">
+      <div class="container">
+        <div class="section-badge emerald">SYNTHESIS & CLOSING SCRUBBER</div>
+        <h2 class="section-title gradient-emerald">The Complete Life Loop</h2>
+        <p class="section-desc" style="margin: 0 auto;">
+          Drag the interactive scrubber to witness the full transformation of an electronic device from unboxing to secondary circular rebirth.
+        </p>
+
+        <div class="final-scrubber-wrapper">
+          <input type="range" id="final-transform-slider" class="final-transform-slider" min="0" max="6" value="0" step="1" aria-label="Device transformation step">
+          
+          <div class="final-stage-display">
+            <span id="final-stage-badge" class="final-stage-badge">STATE 01 // FACTORY FRESH</span>
+            <h3 id="final-stage-title" class="final-stage-title">NEW DEVICE</h3>
+            <p id="final-stage-desc" class="final-stage-desc">
+              Freshly unboxed. 70–80% of its lifetime greenhouse gas emissions are already locked inside, embodied in silicon wafers and refined metals.
+            </p>
+          </div>
+        </div>
+
+        <div class="closing-quote-box">
+          <h2>“Technology doesn't disappear when we stop using it.”</h2>
+          <h3>Designing better lifecycles means designing a better future.</h3>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ======================================================================
+         SECTION 22: RESEARCH & SOURCES SECTION
+         ====================================================================== -->
+    <section id="sources" class="sources-section">
+      <div class="container">
+        <div class="section-badge blue">ACADEMIC & INSTITUTIONAL BIBLIOGRAPHY</div>
+        <h2 class="section-title gradient-blue">Sources & Scientific Methodology</h2>
+        <p class="section-desc">
+          Transparency is paramount in Life Cycle Assessment. Every statistic and emission coefficient presented across this project is derived from peer-reviewed literature and accredited international bodies.
+        </p>
+
+        <div class="sources-filter-row">
+          <input type="search" id="sources-search-input" class="sources-search-input" placeholder="Search references, authors, or verified metrics..." aria-label="Search bibliography">
+        </div>
+
+        <div id="biblio-list" class="biblio-list">
+          <!-- Populated by js/app.js -->
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======================================================================
+       FOOTER & TELEMETRY
+       ====================================================================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand">
+          <h4>Life Cycle Assessment of Electronics</h4>
+          <p>
+            An interactive educational research project demonstrating the cradle-to-grave environmental footprint of consumer and enterprise electronic hardware under the ISO 14040/14044 framework.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h5>Core Journey</h5>
+          <ul>
+            <li><a href="#lifecycle">01–10 Lifecycle Phases</a></li>
+            <li><a href="#materials">Material Matrix</a></li>
+            <li><a href="#manufacturing">Semiconductor Fabs</a></li>
+            <li><a href="#impact">Impact Dashboard</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Longevity & EOL</h5>
+          <ul>
+            <li><a href="#anatomy">Internal Anatomy</a></li>
+            <li><a href="#repair">Repair & Reuse Levers</a></li>
+            <li><a href="#ewaste">UN E-Waste Data</a></li>
+            <li><a href="#recycling">Hydrometallurgy</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Governance & Data</h5>
+          <ul>
+            <li><a href="#circular">Circular Economy</a></li>
+            <li><a href="#calculator">LCA Explorer</a></li>
+            <li><a href="#actions">Action Framework</a></li>
+            <li><a href="#sources">Sources Bibliography</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <span>© Life Cycle Assessment of Electronics Research Project • Academic & Educational Dissemination</span>
+        <span>ISO 14040 / ISO 14044 LCA STANDARD COMPLIANT DATA MODEL</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Back to Top Button -->
+  <button id="back-to-top-btn" class="back-to-top-btn" aria-label="Back to top">
+    ↑
+  </button>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/charts.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
